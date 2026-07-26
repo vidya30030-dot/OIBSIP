@@ -45,8 +45,8 @@ OIBSIP/
     ├── snake-plant.jpg   # Product image 2
     └── peace-lily.jpg    # Product image 3
 
-----
+---
 
-## Author name 
+## 👩‍💻 Author
 
-VIDYA SRI .M 
+**Name:** Vidya Sri M
