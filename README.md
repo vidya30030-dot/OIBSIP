@@ -1,5 +1,13 @@
 # 🌿 GreenNest — Indoor Plant Store Landing Page
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Oasis%20Infobyte-SIP%202026-2F855A?style=for-the-badge&logo=github" alt="Oasis Infobyte Internship" />
+  <img src="https://img.shields.io/badge/Track-Web%20Development%20%26%20Designing-22543D?style=for-the-badge&logo=html5" alt="Web Dev Track" />
+  <img src="https://img.shields.io/badge/Level-1%20Task%201-38A169?style=for-the-badge" alt="Level 1 Task 1" />
+</p>
+
+---
+
 ## 📌 Project Overview
 
 **GreenNest** is a visually appealing, responsive landing page designed for an aesthetic indoor plant nursery. Built with pure **HTML5** and **CSS3**, this project focuses on modern layout techniques, smooth navigation, and a cohesive nature-themed color palette.
@@ -42,3 +50,7 @@ OIBSIP/
     ├── monstera.jpg      # Product image 1
     ├── snake-plant.jpg   # Product image 2
     └── peace-lily.jpg    # Product image 3
+
+## Author name 
+
+VIDYA SRI .M 
