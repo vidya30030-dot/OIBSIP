@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya Sri | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Video Title Card Overlay (For Oasis Demo Video) -->
+    <div id="title-card">
+        <div class="card-wrapper">
+            <div class="glow-ring"></div>
+            <div class="card-box">
+                <div class="top-badge">
+                    <span class="badge-dot"></span> OASIS INFOBYTE INTERNSHIP
+                </div>
+                <div class="hero-icon-container">
+                    <span class="main-icon">💻</span>
+                </div>
+                <h1 class="brand-title">Personal Portfolio</h1>
+                <p class="task-tag">WEB DEVELOPMENT & DESIGNING • TASK 2</p>
+
+                <div class="glass-divider"></div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="label">INTERN NAME</span>
+                        <span class="val">Vidya Sri</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">PROJECT TRACK</span>
+                        <span class="val">Level 1: Personal Portfolio</span>
+                    </div>
+                </div>
+
+                <button class="launch-btn" onclick="document.getElementById('title-card').style.opacity='0'; setTimeout(()=> document.getElementById('title-card').style.display='none', 500);">
+                    <span>VIEW PORTFOLIO</span>
+                    <span class="btn-arrow">➔</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">&lt;Vidya Sri /&gt;</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Profile Section (With Code Badge Icon) -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-avatar-badge">
+                <div class="badge-circle">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Vidya Sri</h1>
+                <h2 class="role-title">Frontend Developer & Designer</h2>
+                <p class="bio-short">Passionate about crafting responsive, user-friendly web applications and clean digital experiences.</p>
+                <a href="#projects" class="cta-btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I am a dedicated web development enthusiast with a strong foundation in modern frontend technologies. My passion lies in converting complex ideas into elegant, intuitive, and responsive web solutions.</p>
+            <p>Currently sharpening my skills through the Oasis Infobyte Web Development Internship, I continuously explore modern design trends, CSS frameworks, and clean code principles.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fa-brands fa-github"></i><span>Git & GitHub</span></div>
+            <div class="skill-card"><i class="fa-solid fa-mobile-screen"></i><span>Responsive Design</span></div>
+            <div class="skill-card"><i class="fa-brands fa-figma"></i><span>UI/UX Basics</span></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img p1"></div>
+                <div class="project-info">
+                    <h3>GreenNest — Indoor Plant Store</h3>
+                    <p>A responsive landing page built with modern HTML5/CSS3, featuring custom glassmorphic components and nature-themed branding.</p>
+                    <a href="https://github.com/vidya30030-dot/OIBSIP/tree/main/WebDev-L1-LandingPage" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img p2"></div>
+                <div class="project-info">
+                    <h3>Temperature Converter Tool</h3>
+                    <p>An interactive web app supporting real-time unit conversion between Celsius, Fahrenheit, and Kelvin with input validation.</p>
+                    <a href="https://github.com/vidya30030-dot/OIBSIP/tree/main/WebDev-L1-TemperatureConverter" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-subtitle">Feel free to reach out for collaborations or project inquiries!</p>
+        
+        <div class="contact-box">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>vidyasri@gmail.com</span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vidya Sri. Built for Oasis Infobyte Internship.</p>
+    </footer>
+
+</body>
+</html>
