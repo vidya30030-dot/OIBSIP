@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraTemp Pro | Modern Temp Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Video Title Card Overlay -->
+    <div id="title-card">
+        <div class="card-wrapper">
+            <div class="glow-ring"></div>
+            <div class="card-box">
+                <div class="top-badge">
+                    <span class="badge-dot"></span> OASIS INFOBYTE INTERNSHIP
+                </div>
+                <div class="hero-icon-container">
+                    <span class="main-icon">🌡️</span>
+                </div>
+                <h1 class="brand-title">AuraTemp</h1>
+                <p class="task-tag">WEB DEVELOPMENT & DESIGNING • TASK 3</p>
+
+                <div class="glass-divider"></div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="label">DEVELOPER</span>
+                        <span class="val">Vidya Sri</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">PROJECT TRACK</span>
+                        <span class="val">Level 1: Temp Converter</span>
+                    </div>
+                </div>
+
+                <button class="launch-btn" onclick="document.getElementById('title-card').style.opacity='0'; setTimeout(()=> document.getElementById('title-card').style.display='none', 500);">
+                    <span>LAUNCH APP</span>
+                    <span class="btn-arrow">➔</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambient Ambient Dynamic Background Glow -->
+    <div class="ambient-glow" id="ambientGlow"></div>
+
+    <!-- Main Converter App Container -->
+    <main class="app-wrapper">
+        <div class="app-card" id="mainCard">
+            <!-- Header -->
+            <header class="app-header">
+                <div class="badge-pill">
+                    <i class="fa-solid fa-bolt"></i> PRO CONVERTER
+                </div>
+                <h2>AuraTemp Converter</h2>
+                <p>Precision Temperature Engine</p>
+            </header>
+
+            <!-- Quick Preset Shortcuts -->
+            <div class="presets-container">
+                <span class="preset-label">Quick Set:</span>
+                <button class="preset-btn" onclick="applyPreset(0, 'celsius')">🧊 Freezing (0°C)</button>
+                <button class="preset-btn" onclick="applyPreset(37, 'celsius')">🩺 Body (37°C)</button>
+                <button class="preset-btn" onclick="applyPreset(100, 'celsius')">🔥 Boiling (100°C)</button>
+            </div>
+
+            <!-- Input Fields Area -->
+            <div class="input-section">
+                <div class="field-box">
+                    <label for="tempInput"><i class="fa-solid fa-calculator"></i> Value</label>
+                    <input type="number" id="tempInput" placeholder="00.00" step="any" autocomplete="off">
+                </div>
+
+                <div class="selectors-row">
+                    <div class="field-box flex-1">
+                        <label for="fromUnit">From</label>
+                        <select id="fromUnit">
+                            <option value="fahrenheit" selected>Fahrenheit (°F)</option>
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+
+                    <div class="swap-pill" id="swapBtn" title="Swap Units">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+
+                    <div class="field-box flex-1">
+                        <label for="toUnit">To</label>
+                        <select id="toUnit">
+                            <option value="celsius" selected>Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Button -->
+            <button id="convertBtn" class="convert-btn">
+                <span>CONVERT NOW</span>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </button>
+
+            <!-- Error Notification -->
+            <div id="errorMsg" class="error-toast hide">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span id="errorText">Invalid Input</span>
+            </div>
+
+            <!-- Focused Single Output Display -->
+            <div id="resultCard" class="result-card hide">
+                <div class="gauge-ring-bg">
+                    <div class="result-inner">
+                        <span class="result-label">TARGET OUTPUT</span>
+                        <div class="main-val-box">
+                            <span id="resultVal" class="result-val">--</span>
+                            <span id="resultSymbol" class="result-sym">°C</span>
+                        </div>
+                        <div class="state-badge" id="stateBadge">
+                            <i id="stateIcon" class="fa-solid fa-temperature-half"></i>
+                            <span id="stateText">Normal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vidya Sri • Crafted for Oasis Infobyte Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
